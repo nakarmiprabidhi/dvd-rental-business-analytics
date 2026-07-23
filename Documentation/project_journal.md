@@ -63,3 +63,30 @@ Document any errors, incorrect predictions, or syntax issues encountered today.
 - Validate data before assuming a column represents the business meaning.
 - `activebool` and `active` are different columns with different purposes.
 - Use `ORDER BY` to produce consistent report output.
+
+## Day 3 - Rental Duration KPIs
+
+### Business Tickets
+
+- DA-004 - Longest configured rental duration
+- DA-005 - Shortest configured rental duration
+
+### Concepts Practiced
+
+- MAX()
+- MIN()
+- Single-value aggregate queries
+- Distinguishing configured duration from actual rental behavior
+
+### Business Insights
+
+- Longest configured rental duration: [7 days]
+- Shortest configured rental duration: [3 days]
+
+### Key Lesson
+
+The `film.rental_duration` column represents the rental period established for each film. It is different from the actual time a customer kept a rental, which must be calculated from `rental.return_date - rental.rental_date`.
+
+s
+
+

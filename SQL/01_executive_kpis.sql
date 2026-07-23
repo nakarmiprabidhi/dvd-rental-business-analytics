@@ -52,3 +52,36 @@ ORDER BY store_id;
 -- Validation:
 -- Store 1: 326 customers
 -- Store 2: 273 customers
+
+
+-- =========================================================
+-- KPI 04: LONGEST CONFIGURED RENTAL DURATION
+-- Business Question:
+-- What is the longest rental period offered for any film?
+-- =========================================================
+
+SELECT
+    MAX(rental_duration) AS longest_rental_duration
+FROM film;
+
+-- Validation:
+-- Returned one row representing the longest configured rental duration.
+-- Result: 7 days.
+
+
+-- =========================================================
+-- KPI 05: SHORTEST CONFIGURED RENTAL DURATION
+-- Business Question:
+-- What is the shortest rental period offered for any film?
+-- =========================================================
+
+SELECT
+    MIN(rental_duration) AS shortest_rental_duration
+FROM film;
+
+Validation:
+-- Returned one row representing the shortest configured rental duration.
+-- Result: 3 days
+
+
+
