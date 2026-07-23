@@ -25,3 +25,6 @@ Thumbs.db
 
 # VS Code local settings
 .vscode/
+
+# Environment files
+Python/config/database.env
